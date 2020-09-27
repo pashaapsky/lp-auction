@@ -1,0 +1,91 @@
+//переменные
+$minwidth: 320px;
+$mw: 970;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+// default
+@import "normalize";
+
+// шрифты
+@import "fonts";
+@import "http://fonts.fontstorage.com/import/ptsans.css";
+
+// блоки
+@import "headers";
+@import "main-slider";
+@import "slick-slider";
+
+//Шрифт по умолчанию
+$fontFamily: "PT Sans";
+
+html
+{
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after
+{
+  box-sizing: inherit;
+}
+
+body
+{
+  font-family: $fontFamily, "Arial", sans-serif;
+  line-height: normal;
+  min-width: $minwidth;
+
+  margin: 0;
+
+  color: #000;
+  background-color: #fff;
+}
+
+body.modal-active
+{
+  overflow: hidden;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+a
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+.fixed-container {
+  max-width: $mw + px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  //overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+

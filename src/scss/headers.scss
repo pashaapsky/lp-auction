@@ -1,0 +1,255 @@
+//переменные
+$minwidth: 320px;
+$mw: 970;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+.header {
+  background-color: #1c242a;
+
+  &__container{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    height: 75px;
+
+    @media (max-width: $md3 + px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    width: 144px;
+    z-index: 100;
+    @media (max-width: $md3 + px) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.menu {
+  flex: 1 0 auto;
+
+  padding: 0 0 0 30px / 950px * 100%;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $md3 + px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    margin: 0 15px;
+
+    @media (max-width: $md3 + px) {
+      margin: 0 0 30px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__body {
+    @media (max-width: $md3 + px) {
+      background-color: rgba(28,36,42,0.95);
+      position: fixed;
+      height: 1px;
+      width: 1px;
+      left: 0;
+      top: 0;
+      padding: 100px 0 20px 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease 0s;
+
+      &:after {
+        content: "";
+        background-color: #1c242a;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 75px;
+      }
+
+      &._open {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+      }
+    }
+  }
+
+  &__link {
+    font-family: 'pfdin', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+
+    color: #ffffff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: $md3 + px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.burger-menu {
+  @media (max-width: $md3 + px) {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+
+    z-index: 100;
+
+    cursor: pointer;
+
+    color: black;
+
+    background: url("../icons/menu-close.svg") center center no-repeat;
+    background-size: 130%;
+
+    transition: background 0.3s linear;
+
+    &._open {
+      background: url("../icons/menu-open.svg") center center no-repeat;;
+    }
+  }
+
+  display: none;
+}
+
+.action-header {
+  display: flex;
+  align-items: center;
+
+  &__user {
+    margin: 0 0 0 30px;
+
+    @media (max-width: 890px) {
+      margin: 0 0 0 15px;
+    }
+  }
+
+  &__region {
+    position: relative;
+    z-index: 100;
+    @extend .menu__link;
+    background: url("../img/header/globe.png") left center no-repeat;
+    padding-left: 30px;
+    min-width: 18px;
+    min-height: 18px;
+
+    @media (max-width: 890px) {
+      padding: 0;
+    }
+    @media (max-width: $md3 + px) {
+      display: none;
+    }
+  }
+
+  &__span {
+    @media (max-width: 890px) {
+      display: none;
+    }
+  }
+}
+
+.user-header {
+
+  &__icon {
+    display: block;
+    position: relative;
+    z-index: 100;
+
+    cursor: pointer;
+  }
+
+  &__menu {
+    min-width: 175px;
+    height: 165px;
+    position: absolute;
+    top: 88px;
+    right: 0;
+
+    padding: 20px;
+
+    background-color: #1c242a;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s ease 0s;
+
+    &._active {
+      top: 78px;
+      opacity: 1;
+      visibility: visible;
+      z-index: 5;
+    }
+
+    @media (max-width: $md3 + px) {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    margin: 0 0 10px 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    font-family: PT Sans, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+
+    padding: 0 0 0 30px;
+
+    &_1 {
+      background: url("../img/header/menu-glob.png") left center no-repeat;
+    }
+    &_2 {
+      background: url("../img/header/menu-key.png") left center no-repeat;
+    }
+    &_3 {
+      background: url("../img/header/menu-hand.png") 4px center no-repeat;
+    }
+    &_4 {
+      background: url("../img/header/menu-hammer.png") left center no-repeat;
+    }
+
+    @media (min-width: 992px) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+

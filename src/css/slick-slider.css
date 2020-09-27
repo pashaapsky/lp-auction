@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* стрелки */
+.works__list .slick-arrow {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  font-size: 0;
+  background-image: url("../img/works/arrow.png");
+  background-size: 100% 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 5;
+}
+
+.works__list .slick-arrow:active {
+  /*background-color: transparent;*/
+}
+
+.works__list .slick-arrow.slick-next {
+  right: -15px;
+  top: 35%;
+  transform: rotateY(180deg);
+}
+
+.works__list .slick-arrow.slick-prev {
+  left: -15px;
+  top: 35%;
+}
+
+.works__list .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.works__list .slick-dots li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.works__list .slick-dots button {
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+
+.works__list .slick-dots button:hover {
+  background-color: #8993ad;
+}
+
+.works__list .slick-dots li:last-child {
+  margin-right: 0;
+}
+
+/* Элемент точки */
+.works__list .slick-dots li button {
+  font-size: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 50%;
+}
+
+.works__list .slick-dots li.slick-active button {
+  background-color: #ff4e2e;
+}
+
+/*# sourceMappingURL=slick-slider.css.map */

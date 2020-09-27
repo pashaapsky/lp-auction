@@ -1,0 +1,162 @@
+
+.main-slider {
+  position: relative;
+  overflow: hidden;
+
+  &__control {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    z-index: 2;
+
+    width: 100px;
+    height: 100px;
+
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:after {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      width: 70%;
+      height: 70%;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+.control-main-slider {
+
+  &__arrow {
+    position: relative;
+    z-index: 2;
+    background: url("../img/main-slider/slider-arrow.png") 2px 0 no-repeat;
+    width: 14px;
+    height: 24px;
+
+    cursor: pointer;
+
+    &_prev {
+    }
+
+    &_next {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__decor {
+    width: 26px;
+    height: 26px;
+
+    position: relative;
+    z-index: 2;
+
+    margin: 0 12px;
+
+    animation: rotate 3s infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% {
+
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+}
+
+.title {
+  &__item {
+    font-family: Ceremonious_one, sans-serif;
+    color: #bb9c66;
+    font-size: 40px;
+    margin: 0 0 23px/40px * 1em 0;
+  }
+
+  &__main {
+    font-family: pfdin, sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    letter-spacing: 5.25px;
+    line-height: calc(40 / 35);
+    text-transform: uppercase;
+
+    @media (max-width: $md3 + px) {
+      font-size: 30px;
+    }
+
+    &_regular {
+      font-weight: 400;
+    }
+
+    &_white{
+      color: #ffffff;
+    }
+  }
+}
+
+.item-main-slider {
+  position: relative;
+  padding: 30px 0 100px 0;
+  text-align: center;
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__text {
+    max-width: 700px;
+    color: #fff;
+    font-size: 15px;
+    line-height: calc(25 / 15);
+
+    margin: 25px auto 0 auto;
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 30px 0 0 0;
+
+    border: 3px solid #c3a673;
+
+    font-family: "pfdin", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+
+    transition: all 0.5s linear;
+
+    @media (min-width: 992px) {
+      &:hover {
+        background-color: #bb9c66;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+

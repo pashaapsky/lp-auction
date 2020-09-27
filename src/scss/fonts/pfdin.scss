@@ -1,0 +1,21 @@
+/* pfdin */
+/* pfdin-400 regular*/
+@font-face {
+  font-family: 'pfdin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('pfdin Regular'), local('pfdin-Regular'),
+  url('../fonts/pfdintextcondpro-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/pfdintextcondpro-regular.woff') format('woff'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+/* pfdin-500 medium */
+@font-face {
+  font-family: 'pfdin';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('pfdin Medium'), local('pfdin-Medium'),
+  url('../fonts/pfdintextcondpro-medium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/pfdintextcondpro-medium.woff') format('woff'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}

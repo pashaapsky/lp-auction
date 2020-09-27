@@ -1,0 +1,10 @@
+/* BravoRG */
+@font-face {
+  font-family: 'BravoRG';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('BravoRG Regular'), local('BravoRG-Regular'),
+  url('../fonts/BravoRGRegular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/BravoRGRegular.woff') format('woff'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}

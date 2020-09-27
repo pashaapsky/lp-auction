@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Auction</title>
 
     <link rel="stylesheet" href="css/styles.min.css">
 
@@ -122,14 +122,252 @@
                 </div>
 
                 <div class="main-slider__control control-main-slider">
-                     <div class="control-main-slider__arrow control-main-slider__arrow_prev" id="js-arrow_prev"></div>
+                     <div class="control-main-slider__arrow control-main-slider__arrow_prev" id="js-main-arrow_prev"></div>
                      <div class="control-main-slider__decor">
                          <img src="img/main-slider/slider-cicle.png" alt="Лого слайдера">
                      </div>
-                     <div class="control-main-slider__arrow control-main-slider__arrow_next" id="js-arrow_next"></div>
+                     <div class="control-main-slider__arrow control-main-slider__arrow_next" id="js-main-arrow_next"></div>
                 </div>
             </div>
             <!-- </ main-slider -->
+
+            <!-- lots -->
+            <section class="lots">
+                <div class="lots__container fixed-container">
+                    <div class="lots__header block-header">
+                        <div class="block-header__title title">
+                            <div class="title__item">Популярные</div>
+
+                            <h2 class="title__main">Лоты под аукцион</h2>
+                        </div>
+
+                        <div class="block-header__decor block-decor">
+                            <div class="block-decor__items">
+                                <span></span>
+                            </div>
+                            <div class="block-decor__icon">
+                                <img src="img/lots/clock.png" alt="clock">
+                            </div>
+                            <div class="block-decor__items">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lots__slider slider-lots">
+                        <div class="slider-lots__body">
+                            <div class="slider-lots__slide">
+                                <div class="lot">
+                                    <div class="lot__header">
+                                        <a href="" class="lot__image">
+                                            <img src="img/lots/lot_1.png" alt="Фото лота">
+                                        </a>
+
+                                        <div class="lot__timer timer-lot">
+                                            <div class="timer-lot__icon">
+                                                <img src="img/lots/timer-clock.png" alt="Время лота">
+                                            </div>
+
+                                            <div class="timer-lot__time">
+                                                3:21:45:37
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="" class="lot__title">Arnold & Son Worldtimer discovery of antarctica</a>
+
+                                    <div class="lot__info info-lot">
+                                            <div class="info-lot__statistic">
+                                                <div class="info-lot__icon">
+                                                    <img src="img/lots/eye.png" alt="Количество просмотров">
+                                                </div>
+
+                                                <div class="info-lot__value">1 098</div>
+                                            </div>
+
+                                            <div class="info-lot__current-bet current-bet-info-lot">
+                                                <div class="current-bet-info-lot__label">Текущая ставка</div>
+
+                                                <div class="current-bet-info-lot__value">18 999 203</div>
+
+                                                <div class="current-bet-info-lot__currency">&#x20bd</div>
+                                            </div>
+
+                                            <div class="info-lot__statistic">
+                                                <div class="info-lot__icon">
+                                                    <img src="img/lots/hand.png" alt="Количество ставок">
+                                                </div>
+
+                                                <div class="info-lot__value">75</div>
+                                            </div>
+                                        </div>
+
+                                    <a href="" class="lot__btn btn btn_big">Поднять ставку</a>
+                                </div>
+                            </div>
+
+                            <div class="slider-lots__slide">
+                                <div class="lot">
+                                    <div class="lot__header">
+                                        <a href="" class="lot__image">
+                                            <img src="img/lots/lot_2.png" alt="Фото лота">
+                                        </a>
+
+                                        <div class="lot__timer timer-lot">
+                                            <div class="timer-lot__icon">
+                                                <img src="img/lots/timer-clock.png" alt="Время лота">
+                                            </div>
+
+                                            <div class="timer-lot__time">
+                                                3:21:45:37
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="" class="lot__title">Chateau Lafite 1949</a>
+
+                                    <div class="lot__info info-lot">
+                                            <div class="info-lot__statistic">
+                                                <div class="info-lot__icon">
+                                                    <img src="img/lots/eye.png" alt="Количество просмотров">
+                                                </div>
+
+                                                <div class="info-lot__value">736</div>
+                                            </div>
+
+                                            <div class="info-lot__current-bet current-bet-info-lot">
+                                                <div class="current-bet-info-lot__label">Текущая ставка</div>
+
+                                                <div class="current-bet-info-lot__value">245 050</div>
+
+                                                <div class="current-bet-info-lot__currency">&#x20bd</div>
+                                            </div>
+
+                                            <div class="info-lot__statistic">
+                                                <div class="info-lot__icon">
+                                                    <img src="img/lots/hand.png" alt="Количество ставок">
+                                                </div>
+
+                                                <div class="info-lot__value">25</div>
+                                            </div>
+                                        </div>
+
+                                    <a href="" class="lot__btn btn btn_big">Поднять ставку</a>
+                                </div>
+                            </div>
+
+                            <div class="slider-lots__slide">
+                                <div class="lot">
+                                    <div class="lot__header">
+                                        <a href="" class="lot__image">
+                                            <img src="img/lots/lot_3.png" alt="Фото лота">
+                                        </a>
+
+                                        <div class="lot__timer timer-lot">
+                                            <div class="timer-lot__icon">
+                                                <img src="img/lots/timer-clock.png" alt="Время лота">
+                                            </div>
+
+                                            <div class="timer-lot__time">
+                                                3:21:45:37
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="" class="lot__title">Rolex Paul Newman  Daytona</a>
+
+                                    <div class="lot__info info-lot">
+                                            <div class="info-lot__statistic">
+                                                <div class="info-lot__icon">
+                                                    <img src="img/lots/eye.png" alt="Количество просмотров">
+                                                </div>
+
+                                                <div class="info-lot__value">11</div>
+                                            </div>
+
+                                            <div class="info-lot__current-bet current-bet-info-lot">
+                                                <div class="current-bet-info-lot__label">Текущая ставка</div>
+
+                                                <div class="current-bet-info-lot__value">3 245 000</div>
+
+                                                <div class="current-bet-info-lot__currency">&#x20bd</div>
+                                            </div>
+
+                                            <div class="info-lot__statistic">
+                                                <div class="info-lot__icon">
+                                                    <img src="img/lots/hand.png" alt="Количество ставок">
+                                                </div>
+
+                                                <div class="info-lot__value">33</div>
+                                            </div>
+                                        </div>
+
+                                    <a href="" class="lot__btn btn btn_big">Поднять ставку</a>
+                                </div>
+                            </div>
+
+                            <div class="slider-lots__slide">
+                                <div class="lot">
+                                    <div class="lot__header">
+                                        <a href="" class="lot__image">
+                                            <img src="img/lots/lot_4.png" alt="Фото лота">
+                                        </a>
+
+                                        <div class="lot__timer timer-lot">
+                                            <div class="timer-lot__icon">
+                                                <img src="img/lots/timer-clock.png" alt="Время лота">
+                                            </div>
+
+                                            <div class="timer-lot__time">
+                                                3:21:45:37
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="" class="lot__title">The lord of the Rings</a>
+
+                                    <div class="lot__info info-lot">
+                                            <div class="info-lot__statistic">
+                                                <div class="info-lot__icon">
+                                                    <img src="img/lots/eye.png" alt="Количество просмотров">
+                                                </div>
+
+                                                <div class="info-lot__value">1 000</div>
+                                            </div>
+
+                                            <div class="info-lot__current-bet current-bet-info-lot">
+                                                <div class="current-bet-info-lot__label">Текущая ставка</div>
+
+                                                <div class="current-bet-info-lot__value">5 120 200</div>
+
+                                                <div class="current-bet-info-lot__currency">&#x20bd</div>
+                                            </div>
+
+                                            <div class="info-lot__statistic">
+                                                <div class="info-lot__icon">
+                                                    <img src="img/lots/hand.png" alt="Количество ставок">
+                                                </div>
+
+                                                <div class="info-lot__value">15</div>
+                                            </div>
+                                        </div>
+
+                                    <a href="" class="lot__btn btn btn_big">Поднять ставку</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-lots__control control-slider-lots">
+                            <div class="control-slider-lots__arrow" id="js-lots-arrow_prev"></div>
+
+                            <a href="" class="control-slider-lots__link">Все лоты</a>
+
+                            <div class="control-slider-lots__arrow" id="js-lots-arrow_next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- lots -->
         </main>
 
         <footer class="footer">

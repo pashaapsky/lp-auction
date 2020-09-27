@@ -13,7 +13,6 @@ userIcon.addEventListener('click', function (event) {
 burgerMenuBtn.addEventListener('click', function (event) {
         event.preventDefault();
 
-        // console.log(this);
         this.classList.toggle('_open');
         navigationMenu.classList.toggle('_open');
 });

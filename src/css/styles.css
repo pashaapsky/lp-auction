@@ -827,15 +827,97 @@ template {
   }
 }
 
+.categories {
+  margin: 0 0 85px;
+}
+.categories__container {
+  overflow: hidden;
+  position: relative;
+}
+.categories__container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #ffffff;
+}
 .categories__row {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -50px;
+  padding: 37px 0 0 0;
+}
+@media (min-width: 567px) {
+  .categories__row {
+    margin: 0 -25px;
+  }
+  .categories__row:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    width: 17.28px;
+    height: 17.28px;
+    flex: 0 0 17.28px;
+    border: 1px solid #bb9c66;
+    transform: translate(-50%, 0) rotate(-45deg);
+  }
+}
+@media (min-width: 991px) {
+  .categories__row:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 33.333%;
+    width: 17.28px;
+    height: 17.28px;
+    flex: 0 0 17.28px;
+    border: 1px solid #bb9c66;
+    transform: translate(-50%, 0) rotate(-45deg);
+  }
+  .categories__row:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 66.666%;
+    width: 17.28px;
+    height: 17.28px;
+    flex: 0 0 17.28px;
+    border: 1px solid #bb9c66;
+    transform: translate(-50%, 0) rotate(-45deg);
+  }
 }
 .categories__column {
   position: relative;
-  flex: 0 1 33.333%;
+  flex: 0 1 100%;
   padding: 0 50px 25px;
   margin: 0 0 25px 0;
+}
+@media (min-width: 567px) {
+  .categories__column {
+    flex: 0 1 50%;
+    padding: 0 20px 25px;
+  }
+}
+@media (min-width: 991px) {
+  .categories__column {
+    flex: 0 1 33.333%;
+  }
+}
+.categories__column:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #bb9c66;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 20px 0;
 }
 .categories__decor {
   display: flex;
@@ -845,8 +927,9 @@ template {
   top: 0;
   right: 0;
   width: 24px;
-  height: 100%;
+  height: calc(100% + 9px);
   transform: translate(50%, 0);
+  z-index: 5;
 }
 .categories__decor:before {
   content: "";
@@ -893,7 +976,11 @@ template {
   padding: 25px 30px;
   text-align: center;
   border-radius: 50%;
+  margin: 0 auto;
   overflow: hidden;
+}
+.item:hover .item__bg {
+  transform: scale(1.1);
 }
 .item__link {
   position: absolute;
@@ -932,6 +1019,7 @@ template {
   height: 100%;
   top: 0;
   left: 0;
+  transition: transform 0.8s ease;
 }
 .item__bg:after {
   content: "";
@@ -994,6 +1082,7 @@ li {
 .wrapper {
   width: 100%;
   min-height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }

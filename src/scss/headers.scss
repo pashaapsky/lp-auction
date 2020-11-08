@@ -8,6 +8,11 @@ $md4: 479.98;
 
 .header {
   background-color: #1c242a;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  top: 0;
+  letter-spacing: 0;
 
   &__container{
     position: relative;

@@ -1,0 +1,134 @@
+.footer {
+  padding: 60px 0 55px;
+  background-color: #1c242a;
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: normal;
+    }
+  }
+
+  &__column {
+    &:first-child {
+
+      @media (min-width: 768px) {
+        flex: 0 0 180px;
+      }
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+
+    &_full {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    margin: 0 0 25px 0;
+  }
+
+  &__privacy {
+    font-size: 14px;
+    line-height: calc(21/14);
+    color: #bb9c66;
+
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__menu {
+    padding: 0 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    justify-content: space-around;
+
+
+    @media (min-width: 768px) {
+      justify-content: normal;
+    }
+
+
+    li {
+      margin: 0 15px 15px 0;
+    }
+  }
+
+  &__link {
+    font-family: PFDin, sans-serif;
+    font-size: 14px;
+    line-height: calc(25/14);
+    font-weight: 500;
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__contacts {
+    padding-top: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      display: block;
+      text-align: right;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: flex-start;
+
+    margin-bottom: 20px;
+    white-space: nowrap;
+
+    font-family: BravoRG, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: calc(25/50);
+    color: #bb9c66;
+
+    text-transform: uppercase;
+
+    small {
+      margin: 2px 5px 0 0;
+      font-size: 25px;
+    }
+  }
+
+  &__callback {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc(21/14);
+    color: #bb9c66;
+
+    background: url("../img/footer/arrow.png") left center no-repeat;
+    padding-left: 15px;
+
+    span {
+      border-bottom: 1px dashed #bb9c66;
+    }
+  }
+}
+
+

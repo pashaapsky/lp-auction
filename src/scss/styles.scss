@@ -17,6 +17,12 @@ $md4: 479.98;
 @import "headers";
 @import "main-slider";
 @import "slick-slider";
+@import "lots";
+@import "categories";
+@import "services";
+@import "quotes";
+@import "info";
+@import "footer";
 
 //Шрифт по умолчанию
 $fontFamily: "PT Sans";
@@ -81,9 +87,13 @@ li {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  //overflow: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.main {
+  padding-top: 75px;
 }
 
 

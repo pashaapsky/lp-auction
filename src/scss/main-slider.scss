@@ -1,7 +1,6 @@
 
 .main-slider {
   position: relative;
-  overflow: hidden;
 
   &__control {
     position: absolute;
@@ -74,6 +73,8 @@
 }
 
 .title {
+  text-align: center;
+
   &__item {
     font-family: Ceremonious_one, sans-serif;
     color: #bb9c66;
@@ -99,6 +100,38 @@
 
     &_white{
       color: #ffffff;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+
+  text-align: center;
+
+  border: 3px solid #c3a673;
+
+  font-family: "pfdin", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+
+  transition: all 0.5s linear;
+
+  &_big {
+    font-size: 21px;
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 0;
+
+    padding: 5px 15px;
+  }
+
+  @media (min-width: 992px) {
+    &:hover {
+      background-color: #bb9c66;
+      opacity: 0.8;
     }
   }
 }
@@ -138,25 +171,7 @@
   }
 
   &__btn {
-    display: inline-block;
-    padding: 15px 25px;
     margin: 30px 0 0 0;
-
-    border: 3px solid #c3a673;
-
-    font-family: "pfdin", sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
-    color: white;
-
-    transition: all 0.5s linear;
-
-    @media (min-width: 992px) {
-      &:hover {
-        background-color: #bb9c66;
-        opacity: 0.8;
-      }
-    }
   }
 }
 

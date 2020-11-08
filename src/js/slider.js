@@ -8,6 +8,10 @@ $(document).ready(function () {
     const lotsSlickArrowNext = $('#js-lots-arrow_next');   //стрелки слайдера
     const lotsSlickArrowPrev = $('#js-lots-arrow_prev');   //стрелки слайдера
 
+    const quotesSlider = $('.slider-quotes__body');   //слайдер
+    const quotesSliderArrowNext = $('#js-quotes-slider-arrow-next');   //стрелки слайдера
+    // const quotesSliderArrowPrev = $('#js-lots-arrow_prev');   //стрелки слайдера
+
     //инициализация слайдера
     mainSlider.slick({
         arrows: false,
@@ -98,4 +102,44 @@ $(document).ready(function () {
 
         lotsSlider.slick('slickPrev');
     });
+
+    quotesSlider.slick({
+        arrows: false,
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // adaptiveHeight: true,
+        speed: 1000,
+        easing: 'ease',
+        initialSlide: 0,
+        responsive: [
+            // {
+            //     breakpoint: 1200,
+            //     settings: {
+            //         arrows: false,
+            //         slidesToShow: 2,
+            //         slidesToScroll: 2,
+            //         infinite: true,
+            //         dots: true
+            //     }
+            // },
+            // {
+            //     breakpoint: 768,
+            //     settings: {
+            //         arrows: false,
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1,
+            //         infinite: true,
+            //         dots: true
+            //     }
+            // },
+        ]});
+
+    quotesSliderArrowNext.on('click', function (event) {
+        event.preventDefault();
+
+        quotesSlider.slick('slickNext')
+    });
+
 });

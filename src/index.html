@@ -23,23 +23,23 @@
                     <nav class="menu__body" id="js-menu__body">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="" class="menu__link">Главная</a>
+                                <a href="" class="menu__link" data-scroll="main">Главная</a>
                             </li>
 
                             <li class="menu__item">
-                                <a href="" class="menu__link">Аукцион</a>
+                                <a href="" class="menu__link" data-scroll="lots">Аукцион</a>
                             </li>
 
                             <li class="menu__item">
-                                <a href="" class="menu__link">О проекте</a>
+                                <a href="" class="menu__link" data-scroll="services">О проекте</a>
                             </li>
 
                             <li class="menu__item">
-                                <a href="" class="menu__link">Партнерам</a>
+                                <a href="" class="menu__link" data-scroll="info">Партнерам</a>
                             </li>
 
                             <li class="menu__item">
-                                <a href="" class="menu__link">Контакты</a>
+                                <a href="" class="menu__link" data-scroll="footer">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -697,10 +697,234 @@
             </section>
             <!-- /services -->
 
+            <!-- quotes -->
+            <section class="quotes">
+                <div class="quotes__container fixed-container">
+                    <div class="quotes__header block-header">
+                        <div class="block-header__title title">
+                            <div class="title__item">Интересные</div>
+
+                            <h2 class="title__main">Цитаты</h2>
+                        </div>
+
+                        <div class="block-header__decor block-decor">
+                            <div class="block-decor__items">
+                                <span></span>
+                            </div>
+                            <div class="block-decor__icon">
+                                <img src="img/quotes/header_icon.png" alt="icon">
+                            </div>
+                            <div class="block-decor__items">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quotes__slider slider-quotes">
+                        <div class="slider-quotes__body">
+                            <div class="slider-quotes__slide">
+                                <div class="slider-quotes__image">
+                                    <img src="img/quotes/MT.png" alt="Фото МаркТвен">
+                                </div>
+
+                                <div class="slider-quotes__content">
+                                    <p class="slider-quotes__title">«Легче одурачить людей, чем убедить их в том, что они одурачены»</p>
+
+                                    <div class="slider-quotes__info">
+                                        <p class="slider-quotes__name">Марк Твен</p>
+
+                                        <p class="slider-quotes__date">1835 - 1910</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider-quotes__slide">
+                                <div class="slider-quotes__image">
+                                    <img src="img/quotes/MT.png" alt="Фото МаркТвен">
+                                </div>
+
+                                <div class="slider-quotes__content">
+                                    <p class="slider-quotes__title">«Легче одурачить людей, чем убедить их в том, что они одурачены»</p>
+
+                                    <div class="slider-quotes__info">
+                                        <p class="slider-quotes__name">Марк Твен</p>
+
+                                        <p class="slider-quotes__date">1835 - 1910</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-quotes__control control-slider-quotes">
+                            <div class="control-slider-quotes__decor"></div>
+                            <div class="control-slider-quotes__link" id="js-quotes-slider-arrow-next"></div>
+                            <div class="control-slider-quotes__decor rotate"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /quotes -->
+
+            <!-- info -->
+            <section class="info">
+                <div class="info__container fixed-container">
+                    <div class="info__row">
+                        <div class="info__column">
+                            <section class="info__news news">
+                                <h3 class="news__title info-title">Новости</h3>
+
+                                <div class="news__content">
+                                    <div class="news__item info-item">
+                                        <div class="info-item__date">12.07.14</div>
+
+                                        <a href="#" class="info-item__label">Уникальной Лакшери аукционе, здесь вы сможете найти</a>
+
+                                        <p class="info-item__text">Продажа товаров, ценных бумаг, имущества предприятий, произведений искусства и других объектов, которая...</p>
+                                    </div>
+
+                                    <div class="news__item info-item">
+                                        <div class="info-item__date">12.07.14</div>
+
+                                        <a href="#" class="info-item__label">Достойные для себя лоты</a>
+
+                                        <p class="info-item__text">Имущества предприятий, произведений искусства и других объектов, произведений редприятий, произведений искусств...</p>
+                                    </div>
+
+                                    <div class="news__item info-item">
+                                        <div class="info-item__date">12.07.14</div>
+
+                                        <a href="#" class="info-item__label">Уникальной Лакшери аукционе, здесь вы сможете найти</a>
+
+                                        <p class="info-item__text">Продажа товаров, ценных бумаг, имущества предприятий, произведений искусства и других объектов, которая...</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="info__column">
+                            <section class="info__events events">
+                                <h3 class="events__title info-title">События</h3>
+
+                                <div class="events__content">
+                                    <div class="events__item info-item">
+                                        <a href="#" class="info-item__label bold">Достойные для себя лоты</a>
+
+                                        <p class="info-item__text">Имущества предприятий, произведений искусства и других объектов, произведений редприятий, произведений искусств Продажа товаров, ценных бумаг, имущества предприятий, произведений искусства и других объектов, которая...</p>
+                                    </div>
+
+                                    <div class="events__item info-item">
+                                        <a href="#" class="info-item__label bold">Уникальной Лакшери аукционе, здесь вы сможете найти</a>
+
+                                        <p class="info-item__text">Имущества предприятий, произведений искусства и других объектов, произведений редприятий, произведений искусств Продажа товаров, ценных бумаг, имущества предприятий, произведений искусства и других объектов, которая...</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="info__row">
+                        <section class="info__subscribe subscribe">
+                            <h3 class="subscribe__title info-title">Подписка</h3>
+
+                            <div class="subscribe__body">
+                                <div class="subscribe__column">
+                                    <p class="subscribe__text">
+                                        Для получения уведомлений о новых предложениях, введите адрес своей электронной почты
+                                    </p>
+                                </div>
+
+                                <div class="subscribe__column">
+                                    <form class="subscribe__form form-subscribe" method="" action="">
+                                        <div class="form-subscribe__block">
+                                            <label class="form-subscribe__label" for="subscribe-email"></label>
+                                            <input class="form-subscribe__input" type="email" id="subscribe-email" name="email" placeholder="Ваш e-mail">
+
+                                            <button class="form-subscribe__btn" type="submit">Ок</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <!-- /info -->
         </main>
 
         <footer class="footer">
+            <div class="footer__container fixed-container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <a class="footer__logo">
+                            <img src="img/footer/logo-footer.png" alt="Логотип">
+                        </a>
 
+                        <div class="footer__privacy">Все права защищены © 2020</div>
+                    </div>
+
+                    <div class="footer__column footer__column_full">
+                        <nav class="footer__menu">
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="" class="footer__link">Главная</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="footer__link">Аукцион</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="footer__link">О проекте</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="footer__link">Партнерам</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="footer__link">Контакты</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="footer__link">Новости</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="footer__link">FAQ</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="footer__link">Реклама</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="footer__link">Соглашение</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="footer__link">Регистрация</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="footer__link">Услуги</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer__column">
+                        <div class="footer__contacts">
+                            <a href="tel:+7495222222" class="footer__phone">
+                                <small>+7</small>(495) 22-22-22
+                            </a>
+
+                            <a href="" class="footer__callback">
+                                <span>Обратная связь</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

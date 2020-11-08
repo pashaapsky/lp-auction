@@ -1,0 +1,185 @@
+.info {
+  margin-bottom: 75px;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 -45px;
+  }
+
+  &__column {
+    display: flex;
+    flex: 0 0 100%;
+
+    padding: 0 45px;
+    margin: 0 0 60px;
+
+    @media (min-width: 567px) {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__subscribe {
+    display: flex;
+    padding: 0 45px;
+  }
+}
+
+.info-title {
+  font-family: PFDin, sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  color: #000000;
+  line-height: calc(25/35);
+
+  text-transform: uppercase;
+
+  padding-left: 35px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    background: url("../img/info/news.png") 0 0 no-repeat;
+    margin: 0 0 35px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    background: url("../img/info/events.png") 0 0 no-repeat;
+    margin: 0 0 35px;
+  }
+
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    background: url("../img/info/subscribe.png") 0 0 no-repeat;
+    margin: 0 0 30px;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -45px;
+
+    @media (min-width: 567px) {
+
+    }
+  }
+
+  &__column {
+    flex: 1 1 100%;
+    padding: 0 45px;
+
+    @media (min-width: 567px) {
+      flex: 1 1 50%;
+    }
+  }
+
+  &__text {
+    margin: 0 0 20px;
+
+    @media (min-width: 567px) {
+      margin: 0;
+    }
+  }
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 0 40px;
+
+  &__date {
+    font-size: 12px;
+    color: #bb9c66;
+    line-height: calc(25/12);
+  }
+
+  &__label {
+    font-size: 15px;
+    color: #000000;
+    line-height: calc(25/15);
+
+    text-decoration: underline;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: #000000;
+    line-height: calc(25/15);
+    margin: 0 0 40px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.form-subscribe {
+  display: flex;
+  align-items: center;
+
+  height: 50px;
+  border: 3px solid #bb9c66;
+  background-color: #ffffff;
+
+  &__block {
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  &__input {
+    font-size: 15px;
+    height: 30px;
+
+    padding: 0 25px;
+
+    border: none;
+    outline: none;
+    flex: 1 1 auto;
+
+    &:focus {
+      color: #000000;
+    }
+  }
+
+  &__btn {
+    font-family: PFDin, sans-serif;
+    font-size: 21.5px;
+    font-weight: 500;
+    line-height: calc(25/21.5);
+    text-transform: uppercase;
+
+    border: none;
+    outline: none;
+
+    border-left: 2px solid #bb9c66;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-right: 20px;
+    background: url("../img/info/subscribe-arrow.png") no-repeat right center;
+  }
+}
+

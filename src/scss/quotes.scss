@@ -1,0 +1,131 @@
+.quotes {
+  margin: 65px 0;
+}
+
+.block-header {
+  margin-bottom: 20px;
+
+  @media (min-width: 567px) {
+    margin-bottom: 0;
+  }
+}
+
+.slider-quotes {
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 567px) {
+      flex-direction: row;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    @media (min-width: 567px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    display: flex;
+    flex: 0 0 320px/950px * 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  &__content {
+    flex: 0 1 auto;
+
+    padding: 0 20px;
+
+    @media (min-width: 567px) {
+      padding: 0;
+      margin: 0 0 30px 70px;
+    }
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: calc(30/25);
+    font-style: italic;
+  }
+
+  &__info {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: calc(25/15);
+  }
+
+  &__name {
+    margin: 0;
+  }
+
+  &__date {
+    margin: 0;
+  }
+}
+
+.control-slider-quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 400px;
+  margin: 0 auto;
+
+  &__link {
+    position: relative;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    background: url("../img/quotes/refresh.png") center center no-repeat;
+
+    cursor: pointer;
+  }
+
+  &__decor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 567px) {
+      padding-right: 50px;
+    }
+
+    &:before {
+      content: '';
+      width: 107px;
+      height: 1px;
+      background-color: #bb9c66;
+
+      margin-right: 10px;
+
+      @media (min-width: 567px) {
+        margin-right: 0;
+      }
+    }
+
+    &:after {
+      @media (min-width: 567px) {
+        content: '';
+        border: 1px solid #bb9c66;
+        padding: 5.5px;
+        border-radius: 50%;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

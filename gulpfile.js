@@ -1,4 +1,4 @@
-const project_folder = require("path").basename(__dirname) + '-build';
+const project_folder = "./docs";
 const source_folder = "src";
 
 const path = {
@@ -33,7 +33,7 @@ const path = {
         icons: source_folder + "icons/**/*.{svg}"
     },
     // очистка сборки
-    clean: "./" + project_folder + "/"
+    clean: project_folder
 };
 
 const { src, dest } = require('gulp'),
@@ -82,7 +82,7 @@ function watchFiles() {
 function browserSync(params) {
     browsersync.init({
         server:{
-            baseDir: "./" + project_folder + "/"
+            baseDir: project_folder + "/"
         },
         port: 3000,
         notify: false
